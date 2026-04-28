@@ -30,4 +30,9 @@ Route::get('/listbarang/{id}/{nama}', function ($id, $nama) {
 use App\Http\Controllers\ListBarangController;
 
 Route::get('/listbarang/{id}/{nama}', [ListBarangController::class, 'show']);
+
+use App\Http\Controllers\ProductController;
+
+Route::get('/product', [ProductController::class, 'show']); 
 ?>
+
